@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+        color: rgb(36, 76, 207);
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: underline;
+        color: red;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      a::after {
+        content: "[link]";
+        text-decoration: none;
+        color: rgb(192, 216, 236);
+      }
+
+      a::before {
+        content: "[link]";
+        text-decoration: none;
+        color: rgb(192, 216, 236);
+      }
+
+      .especiais {
+        background-color: rgb(219, 121, 121);
+        color: black;
+        width: 100px;
+        border: 1px solid black; /*sig: borda */
+        padding: 2px; /*sig: espaço da bordar  */
+        margin: 2px; /*sig: espaço entre uma borda e outra*/
+        display: inline-block;
+      }
+
+      /*
+      #  = id
+      .  = class
+      :  = pseudo-class
+      :: = pseudo-element
+      >  = children 
+       */
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+      <li>
+        <a
+          href="https://github.com/WedCloudHead?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Repositorio</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/@wedersontorres"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Canal</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.cursoemvideo.com/curso/seguranca-da-informacao-modulo-01-20-horas/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Curso</a
+        >
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <a
+          href="https://www.youtube.com/@wedersontorres"
+          class="especiais"
+          target="_blank"
+          rel="noopener noreferrer"
+          >testando caracteres especiais</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/@wedersontorres"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="especiais"
+          >testando caracteres especiais</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/@wedersontorres"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="especiais"
+          >testando caracteres especiais</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
+
+<!-- o simbolo : dois pontos numa marcaçao no css como a:visited e a:hover que diz respeito a ancora significa pseudoclasse.  -->
+<!-- e o simbolo :: dois pontos paralelos como a::after e significa pseudoelementos -->
+<!-- (lembrando que os termos apos os simbolos como visited, hover, after sao apenas funçoes que esses pseudos elementos vao executar, existem diversos outros como: backdrop, before, cheakmark e outros ) -->

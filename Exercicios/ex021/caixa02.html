@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        background-color: rgba(58, 62, 70, 0.562);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+      }
+
+      header {
+        font-style: italic;
+        background-color: aliceblue;
+        margin: 10px 10px;
+        border: 1px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+      }
+
+      nav {
+        text-align: center;
+        background-color: rgb(49, 82, 110);
+        padding: 0px;
+        margin: 3px;
+        box-shadow: 4px 3px 6px 1px rgba(0, 0, 0, 0.5);
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: rgb(158, 203, 240);
+        font-weight: lighter;
+        margin: 10px 20px;
+        border: 10px;
+        padding: 3px;
+      }
+
+      nav > a:hover {
+        text-decoration: underline;
+      }
+
+      #assuntos {
+        text-align: center;
+        background-color: rgb(121, 170, 211);
+      }
+
+      main {
+        background-color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 10px;
+        margin: 10px;
+        padding: 3px;
+        border-radius: 0px 10px;
+        box-shadow: 1px 1px 9px 0px black;
+      }
+
+      article {
+        background-color: lightgray;
+      }
+
+      aside {
+        background-color: rgb(134, 198, 250);
+        margin: 10px;
+        text-align: center;
+        padding-right: 5px;
+      }
+
+      footer {
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        padding: 2px;
+        margin: 10px 10px;
+      }
+
+      footer > p {
+        margin: 0px;
+      }
+
+      #bola {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <!--head é a cabeça do site-->
+  <body>
+    <header>
+      <!--header é o cabeçalho do site-->
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">Historias Musicas Artigos</section>
+      <section id="noticias">
+        <article>
+          <a href="#">link</a>
+          <h2>Noticias sobre Bertano</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            inventore deleniti cumque perferendis, maxime quo molestiae officia
+            cupiditate nobis odit fuga, architecto dicta est modi nulla
+            corporis, ea quas porro.
+          </p>
+          <a href="#">link</a>
+          <h2>Noticiassobre irmao do Bertano</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            quas explicabo incidunt amet mollitia reiciendis adipisci optio
+            maiores cupiditate nihil? Beatae unde deserunt labore magni odio
+            officia est totam quasi!
+          </p>
+          <a href="#">link</a>
+          <h2>Noticias sobre irmao do irmao do Bertano</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
+            vero doloribus repudiandae quo ratione quae quidem laboriosam sed
+            obcaecati, ea praesentium recusandae incidunt molestias fugiat quas
+            ullam quod rem ipsa.
+          </p>
+        </article>
+        <aside>
+          <p>Artigo sobre fulano</p>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+  </body>
+</html>
+<!-- lembrando que divs sao box-evel e spans sao inline-level
+ 
+-->

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes em CSS</title>
+    <style>
+      body {
+        font-family: "Courier New", monospace;
+        /*
+            Medidas absolutas:
+            cm, mm, in(polegada), px, pt(ponto), pc(pyca)
+            ----------------------------------------------
+            medidas relativas:
+            em(relativ a M maiusculo da font), ex(relativ ao x minusculo da font), rem(relativ a font que ta no body), vw(largura da view port tam de tela), vh(altura da view port), %
+
+            -> a recomendação da W3C é usar somente px e em.
+         */
+        font-size: 16px;
+        /* 16px geralmente é o tamanho normal da font :( */
+        font-weight: 700;
+        /* lighter, normal, bold, bolder */
+        font-style: italic;
+        text-decoration: underline;
+      }
+
+      /* weight, width, height */
+
+      h1 {
+        font: /*font-style ->*/ italic /*font-weight ->*/ bold /*font-size ->*/
+        3em /*font-family->*/ "Work Sans",
+          sans-serif;
+
+        /*shorthand: 
+        font-style: italic;
+         font-weight: bold;
+         font-size: 2em, 2em, 16px, 32px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif 'Work Sans';
+        */
+      }
+
+      h2 {
+        font-family: "times new romam", "Times New Roman", Times, serif;
+      }
+    </style>
+    <!-- site para saber quais fontes sao disponiveis para todos os dispositivos: css web safe fonts - W3Schools  -->
+  </head>
+  <body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet culpa
+      sequi velit obcaecati error sed dicta recusandae nostrum et, totam
+      voluptatum libero vero, officia vel! Quod quis rem debitis aliquid.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis est dolorum
+      pariatur tenetur necessitatibus! Consequatur dignissimos eum deserunt, ut
+      enim velit esse alias corporis nam, ad veniam. Impedit, quo illum?Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Illo assumenda nemo
+      voluptate recusandae fugit sit veritatis? Officia accusamus doloribus
+      magnam tempora, blanditiis necessitatibus dolore quas, eius, expedita
+      ducimus placeat maiores.
+    </p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum commodi
+      voluptates placeat architecto eius aperiam ab officia animi quam veritatis
+      odio quia minima magni, asperiores numquam dolore perferendis? Pariatur,
+      perspiciatis!
+    </p>
+    <p></p>
+  </body>
+</html>

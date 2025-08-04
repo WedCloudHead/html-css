@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradiente em CSS</title>
+    <style>
+      * {
+        /*Configuraçao global da CSS*/
+        height: 100%;
+      }
+      body {
+        background-image: linear-gradient(
+          to right,
+          #42588f,
+          #7442db,
+          #410eb3,
+          #3b61dc
+        );
+        background-attachment: fixed;
+      }
+      /* de cima pra baixo = (to top); de baixo pra cima = (to bottom); da direita pra esquerda = (to right); da esquerda pra direita = (to left) 
+      para diagonal = 45deg/-45deg */
+    </style>
+  </head>
+  <body>
+    <h1>Teste de Gradiente</h1>
+  </body>
+</html>

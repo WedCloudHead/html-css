@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+:root{
+    --corzero:  #ebe5c5;
+    --corone:   #83e1ad;
+    --cortwo:   #3ddc84;
+    --corthree: #2fa866;
+    --corfour:  #1a5c37;
+    --corfive:  #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:  "Bebas Neue", sans-serif;
+    --fonte-android: 'Android', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--corzero);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--corthree), var(--corfive));
+    min-height: 120px;
+    text-align: center;
+    padding-top: 45px;
+}
+
+header > h1 {
+ color: var(--cortwo);   
+ font-family: var(--fonte-android);
+ font-size: 3em;
+ font-weight: normal;
+ /* padding-top: 35px; */
+ margin-bottom: 30px;
+ text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.61);
+}
+
+header > p {
+    color: white;
+    font-size: 1.1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.568);
+}
+
+nav{
+    background-color: var(--corfive);
+    padding: 10px;
+    
+}
+
+nav > a{
+    color: var(--corone);
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition-duration: 0.7s;
+}
+
+nav > a:hover{
+    background-color: var(--corthree);
+    color: var(--corfive);
+
+}
+
+main{
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fcfaf0;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.541);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+main h1 {
+    color: var(--corfive);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    font-size: 1.4em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--corone), transparent);
+}
+
+main p{
+    text-align: justify;
+    text-indent: 10px;
+    margin: 15px 0px;
+    font-size: large;
+    line-height: 1.1em;
+}
+
+main strong{
+    color: #1a5c37;
+    /* background-color: #42f392; */
+    padding: 2px 2px;
+    text-decoration: underline;
+}
+
+main a{
+    color: var(--corthree);
+    text-decoration: none;
+    transition-duration: 1ms;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+main a:hover{
+     background-color: var(--cortwo);
+    color: var(--corfive);
+    text-decoration: underline;
+
+}
+
+main img{
+    width: 100%;
+
+}
+
+main img.pequena{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+div.video{
+    background-color: var();
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 39.7%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    width: 64%;
+    height: 90%;
+
+
+}
+
+aside{
+    background-color: var(--corone);
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.651);
+
+}
+
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+aside > h3{
+    text-align: center;
+    background-color: var(--corfour);
+    color:var(--corzero);
+    padding: 10px;
+    margin: -5px -5px 0px -5px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+footer a{
+    color: #2fa866;
+    text-align: center;
+}
+
+footer a:hover{
+    color: #83e1ad;
+}
+
+footer{
+    text-align: center;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: var(--corfive);
+    color: white;
+}
+
+
+
+
+
+/* na linha 7 na funçao "src: url('../fontes/idroid.otf') format('opentype');" esses .. antes de /fontes/idroid... é usado quando ao chamar uma fonte e ela nao carregar é porque essa fonte esta dentro de uma pasta anterior e a forma de falar pro vscode isso é usando os .. (lembrando que um . só vc diz para o vscode que é a pasta atual). exemplo: https://youtu.be/3S5ts5bzvzM?si=i6utaTeRxuq6fDtr&t=626
+*/
+
+/* site emojipedia para decorar.
+como add decorações ao site:
+https://youtu.be/pdomr7thueI?si=ytkql6oiCIVm5nOJ&t=401 */

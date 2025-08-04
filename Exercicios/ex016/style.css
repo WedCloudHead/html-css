@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* nao esquecer esse parametro pois ele ajuda a nao deixar que css entre em conflito com html, questao de pontuaçoes e etc */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #3CA6A6, #026773);
+}
+
+main{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #013d44;
+    /* o primeiro parametro é direita, segundo pra baixo, terceiro tonalidade e por ultimo a cor da sombra */
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: #03719c;
+    text-align: center;
+    text-shadow: 2px 2px 3px #03455f;
+
+}
+
+h2{
+    color: #024959;
+
+}
+p {
+    text-align: justify;
+}
