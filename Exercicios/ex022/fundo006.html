@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo da Tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /* Shorthand - background:
+            color > image > position > repeat > [size] > attachement
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center no-repeat fixed;
+            background-size: cover;
+            /* o shorthand para a tag size ainda não esta funcionando por isso ele é declarado da forma integral mesmo. */
         }
 
         main{
@@ -41,4 +50,3 @@
 <!-- a div main é uma div semantica -->
  <!-- a tag background-size possui algumas opções de ajustes e a melhor dependera do estilo e da necessidade para o projeto em questão. Algumas dessas opções são: (cover, contain, auto, 100% 100%, 100px) -->
 <!-- lembrando de testar a tag height: 100vh; ao trabalhar com background-image: url -->
- 
