@@ -17,6 +17,7 @@ header{
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    /* text-transform: uppercase; */
 }
 
 header>p{
@@ -35,8 +36,8 @@ a:hover{
 }
 
 section{
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
 }
@@ -62,6 +63,11 @@ footer{
     text-align: center;
     color: white;
 }
+
+/* caso queira colocar caracteristicas especificas em apenas tipos especificos de links como header e footer por exemplo, basta indentifica-los assim: 
+header a, footer a{ }
+header a:hover, footer a:hover {}
+ */
 
 
 
