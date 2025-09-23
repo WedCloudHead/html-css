@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .gp {
+        color: aliceblue;
+        background-color: rgba(102, 51, 153, 0.61);
+      }
+
+      .name {
+        color: aliceblue;
+        background-color: rgba(102, 51, 153, 0.61);
+      }
+
+      .mv {
+        color: aliceblue;
+        background-color: rgba(102, 51, 153, 0.61);
+      }
+
+      .filme {
+        color: aliceblue;
+        background-color: rgb(160, 8, 8);
+      }
+
+      .women {
+        background-color: rgb(243, 141, 158);
+        color: aliceblue;
+      }
+
+      .men {
+        color: aliceblue;
+        background-color: rgb(42, 42, 231);
+      }
+
+      p {
+        background-color: rebeccapurple;
+        color: azure;
+        text-align: center;
+        margin: -1px;
+        padding: 10px;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      table {
+        width: 800px;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+      }
+
+      tbody > tr:nth-child(n) {
+        background-color: rgba(250, 235, 215, 0.39);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando Tabelas</h1>
+
+    <table>
+      <caption>
+        <p>Tabela Cultural</p>
+      </caption>
+
+      <thead>
+        <td scope="col" class="gp">Grupo</td>
+        <td scope="col" class="name">Nomes</td>
+        <td scope="colgroup" colspan="5" class="mv">Filmes</td>
+      </thead>
+
+      <tr>
+        <!-- <td class="gp">Grupo</td> -->
+        <!-- <td class="name">Nomes</td> -->
+        <!-- <td colspan="5" class="mv">Filmes</td> -->
+      </tr>
+      <tr>
+        <td scope="rowgroup" rowspan="4" class="women">Mulheres</td>
+      </tr>
+      <tr>
+        <td class="women">Ana Maria Santos</td>
+        <td class="women">Alien</td>
+        <td class="women">Rambo</td>
+        <td class="women">Vingadores</td>
+      </tr>
+      <tr>
+        <td class="women">Beatriz Souza</td>
+        <td class="women">Hulk</td>
+        <td class="women">Inception</td>
+        <td class="women">Batman</td>
+      </tr>
+      <tr>
+        <td class="women">Cláudia Melo</td>
+        <td class="women">Oblivion</td>
+        <td class="women">Matrix</td>
+        <td class="women">Big Hero</td>
+        <!-- <td rowspan="4">Homens</td> -->
+      </tr>
+      <tr>
+        <td scope="rowgroup" rowspan="4" class="men">Homens</td>
+      </tr>
+      <tr>
+        <td class="men">Bruno Mendonça</td>
+        <td class="men">Intocáveis</td>
+        <td class="men">Amnesia</td>
+        <td class="men">Gladiador</td>
+      </tr>
+      <tr>
+        <td class="men">Daniel Lourenço</td>
+        <td class="men">Wall-E</td>
+        <td class="men">Oldboy</td>
+        <td class="men">Dangal</td>
+      </tr>
+      <tr>
+        <td class="men">Fabiano Mota</td>
+        <td class="men">Star wars 5</td>
+        <td class="men">Taxi Driver</td>
+        <td class="men">Toy Story</td>
+      </tr>
+
+      <tfoot>
+        <tr>
+          <td scope="row" colspan="2">Total de Filmes</td>
+          <td colspan="3">18</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+<!-- A diferença dessa tabela 04 para outra é a adição e a definição de scopo dos guias da tabela, por exemplo o th grupo tem o scopo col(coluna) pois só é relativo a 1 linha de coluna, enquanto o th filmes recebe scopo colgroup(coluna de grupo) pois é relativo a um grupo de três colunas. essas definições de scopos são importantes para a construção de html semântico onde tudo fica definido e tem suas posições especificas. -->

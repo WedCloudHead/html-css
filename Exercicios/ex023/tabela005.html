@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicios de Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      caption {
+        padding: 8px;
+        margin: 10px;
+      }
+
+      table {
+        width: 500px;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      th,
+      td {
+        border: 2px solid black;
+        height: 45px;
+      }
+
+      col.name{
+        background-color: yellowgreen;
+      }
+      col.sex{
+        background-color: red;
+      }
+      col.age{
+        background-color: brown;
+      }
+      col.profession{
+        background-color: aquamarine;
+      }
+      /* col.group{
+      background-color: red} */
+    </style>
+  </head>
+  <body>
+    <h1>TabEx</h1>
+
+    <table>
+        <colgroup>
+            <col class="name">
+            <col class="sex">
+            <col class="age">
+            <!-- <col class="group" span="2"> -->
+
+             <!-- lembrando que esse "span="2" pode ser alterado para "3", "4", infinitamente e vai ser sempre contabilizado a coluna diretamente ao lado -->
+
+             <!-- nessa linha 53 essa forma de agrupar grupos kk é um encurtamento muito inteligente e dinamico do vscode, basicamente permite unir na tabela grupos que estejam marcados com a class setada e voce pode adicionar estilos a esse grupo assim como demonstrado naa linhas 41, 42. (caso queira ver funcionando na pratica, basta apagar as linhas 51 e 52 e colar a linha 53 no lugar.) 
+              
+             detalhes extras sobre como fazer um efeito "zebrado" nas colunas: https://youtu.be/1Ro7rjINNb0?si=6KXEkouRzNSuP-yA&t=532 -->
+            <col class="profession">
+        </colgroup>
+      <caption>
+        Cadastro
+      </caption>
+      <tr>
+        <th scope="col">nome</th>
+        <th scope="col">sexo</th>
+        <th scope="col">idade</th>
+        <th scope="col">profissão</th>
+      </tr>
+      <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+      </tr>
+      <tr>
+        <td>Cládio</td>
+        <td>M</td>
+        <td>28</td>
+        <td>Programador</td>
+      </tr>
+      <tr>
+        <td>Gustavo</td>
+        <td>M</td>
+        <td>42</td>
+        <td>Professor</td>
+      </tr>
+      <tr>
+        <td>Hélio</td>
+        <td>M</td>
+        <td>19</td>
+        <td>Vendedor</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>39</td>
+        <td>Médica</td>
+      </tr>
+      <tr>
+        <td>Otávio</td>
+        <td>M</td>
+        <td>22</td>
+        <td>Nutricionista</td>
+      </tr>
+    </table>
+  </body>
+</html>
