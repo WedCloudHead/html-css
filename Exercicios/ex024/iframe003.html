@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 90vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam suscipit vero consectetur, magni dicta dolorum nesciunt voluptate doloribus aut dolorem sapiente dolor fugiat vitae maiores dolores ea. Culpa, explicabo!</p>
+    
+    <ul>
+        <li><a href="paginas extras/pagframe001.html" target="frame">primeira pag</a></li>
+        <li><a href="paginas extras/pagframe002.html" target="frame">segunda pag</a></li>
+        <li><a href="paginas extras/pagframe003.html" target="frame">terceira pag</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio optio ad nostrum aspernatur laborum facere perspiciatis ab vel obcaecati repellendus iste ipsam aliquam porro, quae possimus similique odit cum sunt.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur exercitationem repellat similique ad illum aut iusto, totam iure dolor laborum expedita doloribus beatae ab, praesentium ut, asperiores at modi vel.</p> <img src='imagens/plano.png'>">
+        <p>Infelizmente seu navegador ta com problemas para redimensionar esse iframe chefao</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur fugit velit corrupti beatae voluptates, aspernatur excepturi voluptatum fugiat harum aperiam sed quibusdam optio eveniet. Eos velit eligendi architecto quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non nisi voluptatem earum aut laborum! Libero nisi error reiciendis deserunt, asperiores facilis quis natus ut pariatur odio explicabo, a, esse alias?</p>
+</body>
+</html>
+
+<!--IMPORTANTE:
+para que o a pag consiga carregar dentro do iframe a pag escolhida é preciso adicionar o parametro name = "" como esta demonstrado na linha 31-->
+
+<!--e para concatenar de fato basta no link criado mostrar o caminho da pag como nas linhas 24 a 26 e na sequencia adicionar o parametro target="" com mesmo nome que foi dado no iframe name=""-->
+
+
+<!--e na linha 31 onde antes estava src="" eu alterei o parametro para srcdoc="" -->
+
+
+<!--importante entender que dentro de iframe aparenta estar meio bagunçado pois ali dentro não tem um corretor de ajuda do vscode e as aberturas dos parametros ficam em vermelho como se tivesse errado o comando porem ali dentro esta organizado da seguinte forma:
+1) <h1></h1> abertura e fechamento de h1
+2) <p></p> abertura e fechamento de p
+3)<img src='' abertura e fechamento de img
+
+vale relembrar que o fechamento de iframe são: ">
+entao pode gerar esse mal entendido.-->
