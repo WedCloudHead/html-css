@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim sunt est, voluptates dignissimos explicabo repellendus consequatur similique, hic eum eaque recusandae. Eum ipsum ipsa, dolorum magnam nemo quam vitae molestias.</p>
+
+    <iframe src="paginas extras/pagframe004.html" sandbox="sandbox" referrerpolicy="no-referrer">
+        seu navegador nao rodou chef
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga deleniti, perferendis nobis, iste quam atque eum amet sit sunt aperiam neque ex nisi recusandae adipisci placeat modi. Dolorum, sint minima.</p>
+</body>
+</html>
+
+<!--Importante:
+(na duvida sobre os diversos tipos de proteções em sandbox, basta abrir o paramentro e dentro das aspas precionar ctrl+space para ver os parametros, abaixo segue a lista dos mais comuns e seus significados;)
+
+nesse exemplo de iframe em que esta usando como exemplificação o cadastro de uma pessoa por pequeno programa em php, é utilizado um adicional de proteção, esses paremetros de proteções são:
+
+sandbox="sandbox"
+(basicamente esse parametro diz ao navegador que ele deve proibir qualquer tipo de entrada de dados.)
+
+sandbox="allow-scripts"
+(esse parametro diz ao navegador que nessa pagina em especifico e nesse iframe em especifico permite scripts que é um pré-requesito ao utilizar html.)
+
+sandbox="allow-forms"
+(esse parametro diz ao navegador que nessa pagina em especifico e nesse iframe em especifico permite o cadastro de formulario)
+
+sabdbox="allow-same-origin"
+(esse parametro diz ao navegador que nessa pagina em especifico e nesse iframe em especifico permite conteudos e dados da origem somente, ou seja, que venham do proprio codigo fonte original da pagina)
+
+referrerpolicy="no-referer-when-downgrade"
+(basicamente essa é a politica de referencia e o adicional no parametro "when-downgrade" é o metodo padrao dessa politica.
+ja o parametro "no-referrer" somente, torna essa politica dentro do iframe mais limitada em relação a coleta de informações de usuario, basicamente esse parametro vai bloquear qualquer coleta de dados de usuario.)
+-->
