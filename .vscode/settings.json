@@ -5,7 +5,7 @@
     "editor.acceptSuggestionOnEnter": "on",
     "editor.inlineSuggest.edits.allowCodeShifting": "always",
     "editor.hover.above": false,
-    "editor.hover.enabled": false,
+    "editor.hover.enabled": "off",
     "editor.inlineSuggest.edits.renderSideBySide": "auto",
     "editor.inlineSuggest.edits.showCollapsed": true
 }
